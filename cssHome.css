@@ -1,0 +1,132 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.tela-inicial{
+    display: flex;
+    height: 250px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos do cabeçalho */
+.painel-administrativo {
+    background-color: #333;
+    color: #fff;
+    padding:  10px;
+    display: flex;
+    align-items: center;
+}
+nav{
+    margin: 100px auto auto auto;
+}
+
+.logo img {
+    align-items: center;
+    width: 120px; /* Largura da logo */
+    margin-right: 10px;
+}
+
+.titulo h1 {
+    font-size: 24px;
+    margin-left: 100px;
+    width: 200px;
+    margin: 0;
+}
+
+.opcoes {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.grafico{
+    margin-left: 80px;
+    margin-top: 50px;
+    width: 900px;
+    height: 500px;
+    display: flex;
+}
+
+.opcao {
+    margin-right: 20px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Resto dos estilos conforme necessário */
+.Dados {
+    border: 2px solid #000000; /* Adicione uma borda sólida */
+    border-radius: 10px; /* Cantos arredondados */
+    margin-bottom: 20px;
+    width: 160px;
+    margin-left: 100px;
+  
+}
+#tabelaPedidos {
+    border-collapse: collapse;
+    width: 97%;
+    background-color: #FFFFFF;
+    margin-bottom: 140px;
+    margin-right: 150px;
+    margin-left: 20px;    
+  }
+  #tabelaPedidos th, #tabelaPedidos td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Resto dos estilos conforme necessário */
+
+/* Estilos para telas menores (responsividade) */
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column; /* Altera a direção dos elementos para empilhamento */
+        text-align: center; /* Centraliza o texto no cabeçalho */
+        display: flex;
+    }
+    .painel-administrativo{
+        flex-direction: column;
+    }
+    .theme-toggle {
+        margin-top: 10px; /* Espaçamento entre o ícone de tema e o título */
+    }
+
+    .logo img {
+        margin-bottom: 10px; /* Espaçamento entre o logotipo e o título */
+    }
+    .tela-inicial{
+        flex-direction: column;
+    }
+
+    .opcoes {
+        flex-direction: column; /* Empilha as opções de menu */
+        margin-top: 10px; /* Espaçamento entre as opções de menu */
+    }
+
+    .opcao {
+        margin-right: 0; /* Remove a margem direita das opções de menu */
+        margin-bottom: 10px; /* Espaçamento entre as opções de menu */
+    }
+
+    .grafico{
+        flex-direction: column; /* Altera a direção dos elementos para empilhamento */
+        width: 500px;
+    }
+    .tabelaPedidos1{
+        flex-direction: column;
+        margin-top: 800px;
+    }
+}
